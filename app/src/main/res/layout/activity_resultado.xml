@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#EFEEEE">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Projeto Consulta de CEP"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:paddingVertical="5dp"
+        android:id="@+id/Titulo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Titulo"
+        android:text=""
+        android:layout_marginTop="190dp"
+        android:textSize="15dp"
+        android:padding="4dp"
+        android:id="@+id/Logradouro"
+        android:background="@drawable/borda"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Logradouro"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:padding="4dp"
+        android:id="@+id/Bairro"
+        android:background="@drawable/borda"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Bairro"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:padding="4dp"
+        android:id="@+id/Cidade"
+        android:background="@drawable/borda"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Cidade"
+        android:text=""
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:padding="4dp"
+        android:id="@+id/Estado"
+        android:background="@drawable/borda"
+        android:layout_marginHorizontal="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="voltar"
+        android:id="@+id/btnVoltar"
+        android:backgroundTint="@color/black"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Histórico"
+        android:id="@+id/btnHistotico"
+        android:backgroundTint="@color/black"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
